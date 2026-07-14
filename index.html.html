@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 26.2.3.2 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="00:00:00"/>
+	<style type="text/css">
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+		p { margin-bottom: 0.1in; line-height: 115%; background: transparent }
+		pre { font-size: 10pt; font-family: "Liberation Mono", monospace; background: transparent }
+	</style>
+</head>
+<body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Our Special Date&lt;/title&gt;
+    &lt;!-- Google Fonts for an elegant look --&gt;
+    &lt;link href=&quot;https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Poppins:wght@300;400;600&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
+    
+    &lt;style&gt;
+        /* Smooth scrolling effect */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #fdfbf7; /* Soft champagne background */
+            color: #333;
+        }
+
+        /* Hero / First Screen */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+                        url('https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&amp;fit=crop&amp;w=1200&amp;q=80') no-repeat center center/cover;
+            color: white;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        }
+
+        /* The magic scroll button */
+        .scroll-btn {
+            background-color: #d4a373; /* Warm gold/rose tone */
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 30px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .scroll-btn:hover {
+            background-color: #bc8a5f;
+            transform: translateY(-3px);
+        }
+
+        /* Details Section */
+        .details-section {
+            padding: 80px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .details-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: #bc8a5f;
+            margin-bottom: 40px;
+        }
+
+        /* Countdown Timer */
+        .countdown-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 50px;
+        }
+
+        .time-box {
+            background: white;
+            padding: 15px 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            min-width: 70px;
+        }
+
+        .time-box span {
+            display: block;
+            font-size: 2rem;
+            font-weight: 600;
+            color: #d4a373;
+        }
+
+        .time-box label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            color: #888;
+        }
+
+        /* Info Cards */
+        .info-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .info-card h3 {
+            font-family: 'Playfair Display', serif;
+            color: #bc8a5f;
+            margin-top: 0;
+            border-bottom: 1px solid #f0e6df;
+            padding-bottom: 10px;
+        }
+
+        /* Photo Gallery */
+        .photo-gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .photo-gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        /* Message Link */
+        .msg-btn {
+            display: inline-block;
+            background-color: #0084FF; /* Messenger Blue */
+            color: white;
+            padding: 15px 30px;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 30px;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+
+        .msg-btn:hover {
+            background-color: #0066cc;
+        }
+
+        @media (max-width: 600px) {
+            .photo-gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;!-- HERO SECTION --&gt;
+    &lt;section class=&quot;hero&quot;&gt;
+        &lt;h1&gt;An Invitation For You&lt;/h1&gt;
+        &lt;p&gt;I have something special planned. Care to join me?&lt;/p&gt;
+        &lt;a href=&quot;#details&quot; class=&quot;scroll-btn&quot;&gt;Reveal the Details&lt;/a&gt;
+    &lt;/section&gt;
+
+    &lt;!-- DETAILS SECTION --&gt;
+    &lt;section id=&quot;details&quot; class=&quot;details-section&quot;&gt;
+        &lt;h2&gt;Our Date Details&lt;/h2&gt;
+
+        &lt;!-- COUNTDOWN --&gt;
+        &lt;div class=&quot;countdown-container&quot;&gt;
+            &lt;div class=&quot;time-box&quot;&gt;
+                &lt;span id=&quot;days&quot;&gt;00&lt;/span&gt;
+                &lt;label&gt;Days&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;time-box&quot;&gt;
+                &lt;span id=&quot;hours&quot;&gt;00&lt;/span&gt;
+                &lt;label&gt;Hours&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;time-box&quot;&gt;
+                &lt;span id=&quot;minutes&quot;&gt;00&lt;/span&gt;
+                &lt;label&gt;Mins&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;time-box&quot;&gt;
+                &lt;span id=&quot;seconds&quot;&gt;00&lt;/span&gt;
+                &lt;label&gt;Secs&lt;/label&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;!-- WHEN &amp; WHERE --&gt;
+        &lt;div class=&quot;info-card&quot;&gt;
+            &lt;h3&gt;When &amp; Where&lt;/h3&gt;
+            &lt;p&gt;&lt;strong&gt;Date:&lt;/strong&gt; Friday, October 16, 2026&lt;/p&gt;
+            &lt;p&gt;&lt;strong&gt;Time:&lt;/strong&gt; 7:00 PM&lt;/p&gt;
+            &lt;p&gt;&lt;strong&gt;Location:&lt;/strong&gt; [Insert Venue Name/Address Here]&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;!-- THE PROGRAM --&gt;
+        &lt;div class=&quot;info-card&quot;&gt;
+            &lt;h3&gt;The Program&lt;/h3&gt;
+            &lt;p&gt;&lt;strong&gt;7:00 PM&lt;/strong&gt; - Arrival &amp; Welcome Drinks&lt;/p&gt;
+            &lt;p&gt;&lt;strong&gt;7:30 PM&lt;/strong&gt; - Dinner &amp; Conversation&lt;/p&gt;
+            &lt;p&gt;&lt;strong&gt;9:00 PM&lt;/strong&gt; - Late night walk / Dessert&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;!-- DRESS CODE &amp; PHOTOS --&gt;
+        &lt;div class=&quot;info-card&quot;&gt;
+            &lt;h3&gt;Dress Code &amp; Inspiration&lt;/h3&gt;
+            &lt;p&gt;&lt;strong&gt;Vibe:&lt;/strong&gt; Smart Casual / Semi-Formal (Earth tones, warm neutrals)&lt;/p&gt;
+            
+            &lt;div class=&quot;photo-gallery&quot;&gt;
+                &lt;!-- Replace these with your own image URLs! --&gt;
+                &lt;img src=&quot;https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?auto=format&amp;fit=crop&amp;w=500&amp;q=80&quot; alt=&quot;Inspiration 1&quot;&gt;
+                &lt;img src=&quot;https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&amp;fit=crop&amp;w=500&amp;q=80&quot; alt=&quot;Inspiration 2&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;!-- CALL TO ACTION --&gt;
+        &lt;div style=&quot;margin-top: 40px;&quot;&gt;
+            &lt;p&gt;Let me know if you can make it!&lt;/p&gt;
+            &lt;!-- Replace 'YOUR_USERNAME' with your actual Facebook Messenger username --&gt;
+            &lt;a href=&quot;https://m.me/YOUR_USERNAME&quot; target=&quot;_blank&quot; class=&quot;msg-btn&quot;&gt;Message Me on Messenger&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;!-- COUNTDOWN SCRIPT --&gt;
+    &lt;script&gt;
+        // Set your date here (Format: &quot;Month Day, Year HH:MM:SS&quot;)
+        const targetDate = new Date(&quot;Oct 16, 2026 19:00:00&quot;).getTime();
+
+        const countdown = setInterval(function() {
+            const now = new Date().getTime();
+            const difference = targetDate - now;
+
+            const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+            document.getElementById(&quot;days&quot;).innerHTML = days &lt; 10 ? &quot;0&quot; + days : days;
+            document.getElementById(&quot;hours&quot;).innerHTML = hours &lt; 10 ? &quot;0&quot; + hours : hours;
+            document.getElementById(&quot;minutes&quot;).innerHTML = minutes &lt; 10 ? &quot;0&quot; + minutes : minutes;
+            document.getElementById(&quot;seconds&quot;).innerHTML = seconds &lt; 10 ? &quot;0&quot; + seconds : seconds;
+
+            // If the countdown is over
+            if (difference &lt; 0) {
+                clearInterval(countdown);
+                document.querySelector(&quot;.countdown-container&quot;).innerHTML = &quot;&lt;h3&gt;The day is here! ❤️&lt;/h3&gt;&quot;;
+            }
+        }, 1000);
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+</body>
+</html>
